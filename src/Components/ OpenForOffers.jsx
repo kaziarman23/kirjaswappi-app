@@ -1,9 +1,25 @@
-const OpenForOffers = () => (
-  <div className="mt-4">
-    <h2 className="text-xl font-semibold">Open for Offers</h2>
-    <p className="mt-2">
-      Feel free to propose a swap! The owner is open to suggestions.
-    </p>
-  </div>
-);
+const OpenForOffers = ({ data }) => {
+  return (
+    <div className="flex justify-center items-center gap-4 overflow-x-scroll bg-slate-100 p-5">
+      {data.map((book, index) => (
+        <div
+          key={index}
+          className="w-4/5 h-32 flex justify-center items-center bg-[#DEE7F5] p-4 rounded-xl shadow-md"
+        >
+          <div className="w-1/3">
+            <img
+              src="/book_mark.png"
+              alt={book.author}
+              className="object-cover w-6 h-6"
+            />
+          </div>
+          <div className="w-2/3">
+            <h1 className="font-bold text-base">Open To Offers</h1>
+            <h5 className="text-sm">Flexible exchange</h5>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 export default OpenForOffers;

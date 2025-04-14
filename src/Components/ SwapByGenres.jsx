@@ -1,13 +1,25 @@
-const SwapByGenres = ({ genres }) => (
-  <div className="mt-4">
-    <h2 className="text-xl font-semibold">Preferred Genres:</h2>
-    <div className="flex flex-wrap gap-2 mt-2">
-      {genres.map((genre, idx) => (
-        <span key={idx} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
-          {genre}
-        </span>
+const SwapByGenres = ({ data }) => {
+  return (
+    <div className="flex justify-center items-center gap-4 overflow-x-scroll bg-slate-100 p-5">
+      {data.map((book, index) => (
+        <div
+          key={index}
+          className="w-4/5 h-32 flex justify-center items-center bg-[#DEE7F5] p-4 rounded-xl shadow-md"
+        >
+          <div className="w-1/3">
+            <img
+              src="/book_mark.png"
+              alt={book.author}
+              className="object-cover w-6 h-6"
+            />
+          </div>
+          <div className="w-2/3">
+            <h1 className="font-bold text-base">{book?.genres}</h1>
+            <h5 className="text-sm">Any of this genres.</h5>
+          </div>
+        </div>
       ))}
     </div>
-  </div>
-);
+  );
+};
 export default SwapByGenres;
