@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import BookDetails from "../Pages/BookDetails";
+import React, { useState } from "react";
+// import { BookDatas } from '../Api/BookDatas';
 
 const BookSection = () => {
 
@@ -7,12 +7,12 @@ const BookSection = () => {
 
   // useEffect(() => {
   //   const fetchData = async () => {
-  //     const data = await BookDetails();
+  //     const data = await BookDatas();
   //     setBookData(data); 
   //     console.log("Book data:", data); 
   //   };
 
-    // fetchData();
+  //   fetchData();
   // }, []);
 
   return (
@@ -26,10 +26,10 @@ const BookSection = () => {
       </div>
       <section className="w-full bg-slate-100 flex justify-center items-center flex-col gap-3 p-2">
         <h1 className="text-2xl font-bold">
-          this is a book title
+        Man’s search for meaning
         </h1>
         <h3 className="text-lg font-semibold">
-          author name
+        by Viktor Frankl
         </h3>
         <div className="w-full flex justify-center items-center gap-2 text-xs">
           <p className="border-r border-gray-600 leading-none p-1">

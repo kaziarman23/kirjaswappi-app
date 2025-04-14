@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-purple-200 to-pink-300 text-center">
@@ -8,12 +10,12 @@ function Home() {
         Swap books. Share stories. Join the book loving
         community.
       </p>
-      <a
-        href="/book-details"
+      <Link
+        to="/bookDetails"
         className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700"
       >
         View Book Details
-      </a>
+      </Link>
     </div>
   );
 }

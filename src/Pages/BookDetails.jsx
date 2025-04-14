@@ -1,6 +1,7 @@
 import React from "react";
 import BookSection from "../Components/BookSection";
 import BookConditionSection from "../Components/BookConditionSection";
+import AuthorDetailsSection from '../Components/AuthorDetailsSection';
 
 function BookDetails() {
   return (
@@ -10,6 +11,7 @@ function BookDetails() {
       </h1>
       <BookSection></BookSection>
       <BookConditionSection></BookConditionSection>
+      <AuthorDetailsSection></AuthorDetailsSection>
     </div>
   );
 }
