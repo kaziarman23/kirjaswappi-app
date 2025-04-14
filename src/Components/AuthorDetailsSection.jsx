@@ -1,11 +1,6 @@
 import React from "react";
 import toast from "react-hot-toast";
-import { motion } from "framer-motion";
-import {
-  animateBottom,
-  animateLeft,
-  animateRight,
-} from "../Components/Animation";
+
 
 function AuthorDetailsSection() {
   const notify = () =>
@@ -61,14 +56,14 @@ function AuthorDetailsSection() {
         </div>
         <div className="grid grid-cols-2 gap-2">
           <div className="flex justify-center items-center flex-col">
-            <motion.img
-              {...animateBottom}
+            <img
+              
               src="/book2.png"
               alt="book 2"
               className="object-cover w-5/6 rounded-lg"
             />
-            <motion.div
-              {...animateLeft}
+            <div
+              
               className="flex justify-center items-center flex-col"
             >
               <h1 className="text-sm text-center sm:text-lg md:text-xl xl:text-2xl">
@@ -77,17 +72,17 @@ function AuthorDetailsSection() {
               <p className="text-sm sm:text-lg md:text-xl xl:text-2xl">
                 by Viktor Frankl's
               </p>
-            </motion.div>
+            </div>
           </div>
           <div className="flex justify-center items-center flex-col">
-            <motion.img
-              {...animateBottom}
+            <img
+              
               src="/book2.png"
               alt="book 2"
               className="object-cover w-5/6 rounded-lg"
             />
-            <motion.div
-              {...animateRight}
+            <div
+            
               className="flex justify-center items-center flex-col"
             >
               <h1 className="text-sm text-center sm:text-lg md:text-xl xl:text-2xl">
@@ -96,17 +91,17 @@ function AuthorDetailsSection() {
               <p className="text-sm sm:text-lg md:text-xl xl:text-2xl">
                 by Viktor Frankl's
               </p>
-            </motion.div>
+            </div>
           </div>
           <div className="flex justify-center items-center flex-col">
-            <motion.img
-              {...animateBottom}
+            <img
+              
               src="/book2.png"
               alt="book 2"
               className="object-cover w-5/6 rounded-lg"
             />
-            <motion.div
-              {...animateLeft}
+            <div
+              
               className="flex justify-center items-center flex-col"
             >
               <h1 className="text-sm text-center sm:text-lg md:text-xl xl:text-2xl">
@@ -115,18 +110,18 @@ function AuthorDetailsSection() {
               <p className="text-sm sm:text-lg md:text-xl xl:text-2xl">
                 by Viktor Frankl's
               </p>
-            </motion.div>
+            </div>
           </div>
 
           <div className="flex justify-center items-center flex-col">
-            <motion.img
-              {...animateBottom}
+            <img
+              
               src="/book2.png"
               alt="book 2"
               className="object-cover w-5/6 rounded-lg"
             />
-            <motion.div
-              {...animateRight}
+            <div
+              
               className="flex justify-center items-center flex-col"
             >
               <h1 className="text-sm text-center sm:text-lg md:text-xl xl:text-2xl">
@@ -135,7 +130,7 @@ function AuthorDetailsSection() {
               <p className="text-sm sm:text-lg md:text-xl xl:text-2xl">
                 by Viktor Frankl's
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

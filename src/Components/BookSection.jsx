@@ -1,11 +1,3 @@
-import { motion } from "framer-motion";
-import {
-  animateBottom,
-  animateLeft,
-  animateRight,
-  animateTop,
-} from "./Animation";
-
 const BookSection = () => {
   return (
     <div className="w-full h-full flex justify-center items-center flex-col gap-5">
@@ -17,27 +9,16 @@ const BookSection = () => {
         />
       </div>
       <section className="w-full bg-slate-100 flex justify-center items-center flex-col gap-3 p-2">
-        <motion.h1
-          {...animateBottom}
-          className="text-2xl font-bold lg:text-3xl"
-        >
+        <h1 className="text-2xl font-bold lg:text-3xl">
           Man’s search for meaning
-        </motion.h1>
-        <motion.h3 {...animateBottom} className="text-lg font-semibold">
-          by Viktor Frankl
-        </motion.h3>
+        </h1>
+        <h3 className="text-lg font-semibold">by Viktor Frankl</h3>
         <div className="w-full flex justify-center items-center gap-2 text-xs text-gray-600">
-          <motion.p {...animateLeft} className="p-1 md:text-lg lg:text-2xl">
-            Biography
-          </motion.p>
+          <p className="p-1 md:text-lg lg:text-2xl">Biography</p>
           <hr className="w-[0.2px] h-4 bg-gray-400" />
-          <motion.p {...animateTop} className="p-1 md:text-lg lg:text-2xl">
-            Autobiography
-          </motion.p>
+          <p className="p-1 md:text-lg lg:text-2xl">Autobiography</p>
           <hr className="w-[0.2px] h-4 bg-gray-400" />
-          <motion.p {...animateRight} className="p-1 md:text-lg lg:text-2xl">
-            Personal narrative
-          </motion.p>
+          <p className="p-1 md:text-lg lg:text-2xl">Personal narrative</p>
         </div>
       </section>
     </div>

@@ -16,7 +16,7 @@ function BookConditionSection() {
       const data = await BookDatas();
       const arrData = Array.isArray(data) ? data : [data];
       setBook(arrData);
-      console.log("array data: ", arrData);
+      // console.log("array data: ", arrData);
       setLoading(false);
     };
     getData();
