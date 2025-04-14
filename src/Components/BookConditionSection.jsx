@@ -27,7 +27,7 @@ function BookConditionSection() {
   return (
     <div className="w-full h-full bg-slate-100">
       {/* header part */}
-      <img src="" alt="" />
+      {/* icon */}
       <h1 className="text-lg text-center">Exchange Condition</h1>
       <p className="text-sm text-gray-600 text-center">Either one of these</p>
 

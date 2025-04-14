@@ -1,14 +1,17 @@
 import BookSection from "../Components/BookSection";
 import BookConditionSection from "../Components/BookConditionSection";
 import AuthorDetailsSection from "../Components/AuthorDetailsSection";
+import Footer from '../Components/Footer';
+import Header from '../Components/Header';
 
 function BookDetails() {
   return (
     <div className="w-full h-full mx-auto">
-      <h1 className="text-2xl text-center my-10">Book Details</h1>
+      <Header />
       <BookSection />
       <BookConditionSection />
       <AuthorDetailsSection />
+      <Footer />
     </div>
   );
 }
