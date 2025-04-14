@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function AuthorDetailsSection() {
-  return (
-    <div>AuthorDetailsSection</div>
-  )
+  return <div>AuthorDetailsSection</div>;
 }
 
-export default AuthorDetailsSection
+export default AuthorDetailsSection;
