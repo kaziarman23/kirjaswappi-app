@@ -5,7 +5,7 @@ const api =
   "https://api.jsonsilo.com/42bdd7bb-7066-49e8-ae50-bee747b7aa5c";
 const apiKey = "3akimClnEXEa0AgAeuQtNqsf1Q6Bb38oTzkvv2keBa";
 
-export const BookDetails = async () => {
+export const BookDatas = async () => {
   try {
     const headers = {
       "X-SILO-KEY": apiKey,
