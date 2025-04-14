@@ -1,20 +1,4 @@
-import React, { useState } from "react";
-// import { BookDatas } from '../Api/BookDatas';
-
 const BookSection = () => {
-
-  const [bookData, setBookData] = useState(null);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await BookDatas();
-  //     setBookData(data); 
-  //     console.log("Book data:", data); 
-  //   };
-
-  //   fetchData();
-  // }, []);
-
   return (
     <div className="w-full h-full flex justify-center items-center flex-col gap-5">
       <div className="w-4/5 flex justify-center items-center">
@@ -25,22 +9,14 @@ const BookSection = () => {
         />
       </div>
       <section className="w-full bg-slate-100 flex justify-center items-center flex-col gap-3 p-2">
-        <h1 className="text-2xl font-bold">
-        Man’s search for meaning
-        </h1>
-        <h3 className="text-lg font-semibold">
-        by Viktor Frankl
-        </h3>
-        <div className="w-full flex justify-center items-center gap-2 text-xs">
-          <p className="border-r border-gray-600 leading-none p-1">
-            Biography
-          </p>
-          <p className="border-r border-gray-600 leading-none p-1">
-            Autobiography
-          </p>
-          <p className="leading-none p-1">
-            Personal narrative
-          </p>
+        <h1 className="text-2xl font-bold">Man’s search for meaning</h1>
+        <h3 className="text-lg font-semibold">by Viktor Frankl</h3>
+        <div className="w-full flex justify-center items-center gap-2 text-xs text-gray-600">
+          <p className="p-1">Biography</p>
+          <hr className="w-[0.2px] h-4 bg-gray-400" />
+          <p className="p-1">Autobiography</p>
+          <hr className="w-[0.2px] h-4 bg-gray-400" />
+          <p className="leading-none p-1">Personal narrative</p>
         </div>
       </section>
     </div>
